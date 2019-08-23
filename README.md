@@ -1,68 +1,69 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project2: Beuak
+===============
+Live Demo Link: https://beauk.herokuapp.com/
+-------------
 
-## Available Scripts
+ABOUT
+------------
+Beuak is a platform where businesses in the health, beauty and wellness industry can list their venue and customers can book online.
 
-In the project directory, you can run:
 
-### `npm start`
+FEATURES
+-----------
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+RETAILS: 
+- List and take bookings online.
+- Update services provided directly throught the platform.
+- Check all the upcoming booking lists
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+END-USERS
+- Easily make an appointments online.
+- Search for the services by suburb or categories.
+- Choose the time slot and date available online.
+- Get immediate confirmation and see the upcoming booking list online.
+- Cancel the appointments.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Screenshots
+--------
+Homepage <br>
+![](https://res.cloudinary.com/dluw1enan/image/upload/v1566519848/image%20for%20project2/beauk_homepage_p7sirc.jpg)
 
-### `npm run build`
+Signin <br>
+![](https://res.cloudinary.com/dluw1enan/image/upload/v1566519849/image%20for%20project2/signin_beuk_uph8rq.jpg)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Customer search and show services page <br>
+![](https://res.cloudinary.com/dluw1enan/image/upload/v1566471382/image%20for%20project2/search_services_f2vuyk.jpg)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Choose the services date and time<br>
+![](https://res.cloudinary.com/dluw1enan/image/upload/v1566470958/image%20for%20project2/choose_your_time_sv9nu0.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Retail's services list <br>
+![](https://res.cloudinary.com/dluw1enan/image/upload/v1566471225/image%20for%20project2/retails_service_list_icey3n.jpg)
 
-### `npm run eject`
+Retail booking list <br>
+![](https://res.cloudinary.com/dluw1enan/image/upload/v1566471507/image%20for%20project2/image_url_jbocju.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Technologies Used
+------
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- ReactJS
+- React-Bootstrap
+- Rails (Back-end)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+Known bugs
+--------
+- Admin supposed to set the email for retails but currently admin is unable to do so. 
+- Retails cannot access to the customer search page which make it hard for retails to check the appearance of the services.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Future improvement
+----------
+- Improve the functionalities and fix bugs.
+- Styling the website to be a professional site.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Acknowledgement
+------
+Thanks to Joel for all supports. <br>
+Thanks to all the team mates, we did all the great jobs through the tough project week.
