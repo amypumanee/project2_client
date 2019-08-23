@@ -45,7 +45,7 @@ class Signin extends Component {
     render() {
         return(
             <Container>
-                
+                <div className="wrapper">
                 <Row className="justify-content-md-center">
                 {
                     this.state.errorMessage ? <Badge variant="danger">{this.state.errorMessage}</Badge> : ''
@@ -77,12 +77,13 @@ class Signin extends Component {
                         required />
                 </Form.Group>
                 <Row className="justify-content-md-center">
-                <Button variant="primary" type="submit">
+                <Button variant="info" type="submit">
                     Sign in
                 </Button>
                 </Row>
                 </form>
                 </Row>
+                </div>
             </Container>
         );
     }
