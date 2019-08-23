@@ -75,8 +75,8 @@ class RetailsList extends Component {
                       <Card>
                         <Card.Header>
                           <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                            <div className="wrapper">
-                              <Button className="buttonEditRetail" variant="secondary" type="button" onClick={() => this.editRetail(r)}>Edit</Button>
+                            <div>
+                              <Button className="buttonEditRetail" variant="info" type="button" onClick={() => this.editRetail(r)}>Edit</Button>
                             </div>
                           </Accordion.Toggle>
                         </Card.Header>

@@ -12,9 +12,8 @@
 .buttonEditRetail {
   width: 75px;
   height: 35px;
-  margin-left: 140px;
-  margin-right: 140px;
-  padding: 10px;
+  margin-left: 130px;
+  padding: 40px;
   text-align: center;
   background-color: rgb(164, 173, 147);
 }
@@ -34,11 +33,21 @@
   background-color: #F5D7D7;
 }
 
+.wrapperTableRetails {
+  background-color: #FFFFFF;
+  margin-top: 80px;
+  margin-bottom: 310px;
+  padding: 50px;
+}
+
 .list-group {
   margin-top: 70px;
 }
 
-a.btn{
+a.btn {
   margin-bottom: 120px;
 }
 
+.wrapperProfileRe {
+  margin-bottom: 200px;
+}

@@ -7,7 +7,7 @@ class Footer extends Component {
     return (
       <footer>
         <div className="wrapperFooter">
-          <div className="iconFooter"><img src="https://png.pngtree.com/svg/20161008/24671b749c.png" alt="" width='25px' height='30px' />Bookbeauty</div>
+          <div className="iconFooter"><img src="https://png.pngtree.com/svg/20161008/24671b749c.png" alt="" width='25px' height='30px' />Beauk</div>
           <div></div>
           <small className="copyRight">© 2019</small>
         </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Table, Button, Container } from "react-bootstrap";
+import { Table, Button } from "react-bootstrap";
 import '../Css/Customer.css';
 
 const SERVER_URL = 'https://bookbeauty.herokuapp.com/bookings.json';
@@ -17,7 +17,7 @@ class CustomerBookingList extends Component {
   componentDidMount() {
     axios.get(SERVER_URL).then((results) => {
       let login_id = Number(localStorage.user_id);
-      let data = results.data.filter((b) => { return b.user_id === login_id }).sort((a,b)=>{
+      let data = results.data.filter((b) => { return (b.user_id === login_id) || (localStorage.user_type === "ADMIN") }).sort((a,b)=>{
         return new Date(b.date) - new Date(a.date);
       })
       this.setState({ bookings: data });
@@ -44,6 +44,7 @@ class BookingCancelForm extends Component {
               <tr>
                 <th>Booking Date</th>
                 <th>Booking Time</th>
+                <th>Customer Name</th>
                 <th>Retail Name</th>
                 <th>Service</th>
                 <th>Service Image</th>
@@ -59,6 +60,7 @@ class BookingCancelForm extends Component {
                     <tr key={b.id}>
                       <td>{b.date}</td>
                       <td>{b.booking_time}</td>
+                      <td>{b.customer.full_name}</td>
                       <td>{b.retail.retail_name}</td>
                       <td>{b.service.title}</td>
                       <td> <img src={b.service.service_image} width="100" height="100" alt="" /></td>

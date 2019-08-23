@@ -76,8 +76,8 @@ class CategoriesEdit extends Component {
     }
 
     return (
-      <div>
-        <Form onSubmit={this._handleSubmit}>
+      <div className="container">
+        <Form className="categoriesE" onSubmit={this._handleSubmit}>
           <Form.Group controlId="title">
             <Form.Label>Title</Form.Label>
             <Form.Control placeholder="Title" type="text" name="title" value={category.title} onChange={this._handleChange} required maxLength="100" />

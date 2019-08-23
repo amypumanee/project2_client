@@ -52,15 +52,15 @@ class CategoriesList extends Component {
               <div className="cardCategories" key={c.id}>
 
                 <Card className="categorieList" style={{ width: '18rem', display: "inline-block" }}>
-                  <Card.Img variant="top" width='400px' height='225px' src={c.image} />
+                  <Card.Img variant="top" width='700px' height='225px' src={c.image} />
                   <Card.Body>
                     <Card.Title className="titleCategory">{c.title}</Card.Title>
                     <Accordion>
                       <Card>
                         <Card.Header>
                           <Accordion.Toggle as={Button} variant="outline-info" variant="link" eventKey="0">
-                            <div className="wrapper">
-                              <Button className="buttonEdit" variant="outline-info" href={`#/categoryEdit/${c.id}`}>Edit</Button>
+                            <div className="wrapperCategoriel">
+                              <Button className="buttonEdit" variant="info" href={`#/categoryEdit/${c.id}`}>Edit</Button>
 
                             </div>
                           </Accordion.Toggle>

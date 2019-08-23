@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import CustomerForm from './CustomerForm';
 import '../Css/Customer.css';
 import axios from 'axios';
+import { Container } from "react-bootstrap";
+
 
 const CUSTOMER_API = 'https://bookbeauty.herokuapp.com/customers.json'
 // const CUSTOMER_API = 'http://localhost:3000/customers.json'
@@ -19,17 +21,17 @@ class CreateCustomer extends Component {
 
   _handleChange(event) {
     const newData = {
-        [event.currentTarget.name]: event.currentTarget.value
+      [event.currentTarget.name]: event.currentTarget.value
+    };
+    this.setState(({ data }) => {
+      return {
+        data: {
+          ...data,
+          ...newData,
+        }
       };
-      this.setState(({ data }) => {
-        return {
-          data: {
-            ...data,
-            ...newData,
-          }
-        };
-      });
-    
+    });
+
   }
 
   _handleSubmit(event) {
@@ -45,11 +47,15 @@ class CreateCustomer extends Component {
   render() {
     return (
       <div>
-        <CustomerForm
-        customer = {this.state.data}
-        onTyping = {this._handleChange}
-        onSubmit = {this._handleSubmit}
-        /> 
+        <Container>
+          <div className="wrapperCreateCustomer">
+            <CustomerForm
+              customer={this.state.data}
+              onTyping={this._handleChange}
+              onSubmit={this._handleSubmit}
+            />
+          </div>
+        </Container>
       </div>
     );
   }

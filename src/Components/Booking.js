@@ -6,7 +6,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import '../Css/Booking.css';
 
 const SERVICES_ID_URL = 'https://bookbeauty.herokuapp.com/services/:id.json';
-const BOOKING_URL = 'http://bookbeauty.herokuapp.com/bookings.json';
+const BOOKING_URL = 'https://bookbeauty.herokuapp.com/bookings.json';
 
 class Booking extends Component {
     constructor(props) {

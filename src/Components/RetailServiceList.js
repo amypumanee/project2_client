@@ -47,7 +47,7 @@ class RetailServiceList extends Component {
           <Accordion>
             <Card>
               <Card.Header className="dropform">
-                <Accordion.Toggle  as={Button} variant="link" eventKey="0">
+                <Accordion.Toggle as={Button} variant="link" eventKey="0">
                   + Add new service
               </Accordion.Toggle>
               </Card.Header>
@@ -58,8 +58,8 @@ class RetailServiceList extends Component {
           </Accordion>
         </Container>
 
-        {this.state.services.map((s)=>{
-          return(
+        {this.state.services.map((s) => {
+          return (
             <div key={s.id}>
               <Container>
                 <ListGroup>
@@ -166,10 +166,10 @@ class AddServiceForm extends Component {
           <Form.Group controlId="exampleForm.ControlInput1">
             <Form.Label><strong>Image</strong></Form.Label>
             <Form.Control type="text" name="service_image" value={this.state.service_image} readOnly="true" />
-            <Button onClick={this.uploadWidgetAdd}>Select Image</Button>
+            <Button variant="outline-info" onClick={this.uploadWidgetAdd}>Select Image</Button>
           </Form.Group>
 
-          <Button variant="primary" type="submit">
+          <Button variant="outline-info" type="submit">
             Save
           </Button>
         </Form>
@@ -181,7 +181,7 @@ class AddServiceForm extends Component {
 class UpdateButton extends Component {
   render() {
     return (
-      <Button variant="primary" id={this.props.id}>Edit</Button>
+      <Button variant="outline-info" id={this.props.id}>Edit</Button>
     )
   }
 }
@@ -294,10 +294,10 @@ class EditForm extends Component {
           <Form.Group controlId="exampleForm.ControlInput1">
             <Form.Label><strong>Image</strong></Form.Label>
             <Form.Control type="text" name="service_image" value={this.state.service.service_image} readOnly="true" />
-            <Button onClick={this.uploadWidgetEdit}>Select Image</Button>
+            <Button variant="info" onClick={this.uploadWidgetEdit}>Select Image</Button>
           </Form.Group>
 
-          <Button variant="primary" type="submit" id={this.state.service.service_id} onSubmit={this._handleSubmit}>
+          <Button variant="info" type="submit" id={this.state.service.service_id} onSubmit={this._handleSubmit}>
             Save
           </Button>
 

@@ -17,7 +17,7 @@ footer {
 
 .iconFooter {
   text-align: center;
-  display: block;
+  display: inline-block;
   font-size: 15px;
 }
 

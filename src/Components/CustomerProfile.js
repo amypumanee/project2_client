@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Button } from 'react-bootstrap';
+import { Button, Container, Row } from 'react-bootstrap';
 import '../Css/Customer.css';
 
 const CUSTOMER_API = `https://bookbeauty.herokuapp.com/customers/:id.json`
@@ -25,11 +25,20 @@ class CustomerProfile extends Component {
 
     render() {
         return (
-            <div>
-                <p>Fullname: {this.state.full_name}</p>
-                <p>Phone: {this.state.phone}</p>
-                <Button variant="info" href={`#/editcustomerprofile`}>Edit</Button>
-            </div>
+
+            <Container>
+                <div className="container">
+                    <Row className="justify-content-xl-center">
+                        <div className="wrapperCustomerProfile">
+                            <p>Fullname: {this.state.full_name}</p>
+                            <p>Phone: {this.state.phone}</p>
+                            <Button variant="info" href={`#/editcustomerprofile`}>Edit</Button>
+                        </div>
+                    </Row>
+                </div>
+            </Container >
+
+
         );
     }
 }

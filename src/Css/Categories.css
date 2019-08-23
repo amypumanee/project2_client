@@ -12,9 +12,8 @@
   text-align: center;
 }
 
-.wrapper {
+.wrapperCategoriel {
   margin: 10px;
-  margin-bottom: 10px;
 }
 
 /* background-color: rgb(245, 233, 235); */
@@ -26,12 +25,13 @@
   display: block;
   margin: 45px;
 } */
+
 .buttonEdit {
   width: 75px;
   height: 35px;
   margin-left: 120px;
   margin-right: 120px;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
 }
 
@@ -41,9 +41,21 @@
 }
 
 .buttonSelectImage {
-  margin: 20px;
+  margin: 10px;
 }
 
 .btn {
   margin: 10px;
+}
+
+.categoriesE {
+  margin-bottom: 130px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px 5px #858485;
+  padding: 30px;
+}
+
+a.btn {
+  margin-bottom: 10px;
+  margin-left: 20px;
 }

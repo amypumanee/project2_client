@@ -17,14 +17,14 @@ class Home extends Component {
         <main className="mainHome">
           < div className="container">
             <section className="home-content">
-              <h2>Bookbeauty is your beauty website</h2>
+              <h2>Beauk is your beauty website</h2>
               <p className="icon"><img src="https://image.flaticon.com/icons/svg/34/34148.svg" alt="" width='30px' height='35px' ></img> Search</p>
               <p className="icon"><img src="https://cdn4.iconfinder.com/data/icons/hotel-and-reservation-services-outline/64/booking_online-512.png" alt="" width='50px' height='40px' ></img>Booking</p>
               <p className="icon"><img src="https://png.pngtree.com/svg/20160704/7d1563919c.png" alt="" width='50px' height='40px' ></img>Feel Pretty</p>
-              <p>Bookbeauty provides you with a quick and easy way to book your next beauty.
+              <p>Beauk provides you with a quick and easy way to book your next beauty.
                 It is simple. Search online. Book instantly. Enjoy your treatment!</p>
               <p>
-                With Bookbeauty you can search, book with immediate confirmation.
+                With Beauk you can search, book with immediate confirmation.
                 We securely process thousands of bookings each week for happy customers all around
                 the Sydney, and our friendly support team is always ready to help out should you
               need them.</p>
